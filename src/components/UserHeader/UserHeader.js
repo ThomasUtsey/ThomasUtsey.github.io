@@ -1,43 +1,52 @@
 
-import styled from 'styled-components';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { ArrowRight16 } from '@carbon/icons-react';
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 640px) {
-    display: ${({ isHome }) => (!isHome ? 'none' : 'flex')};
-    flex-direction: column;
-  }
-`;
+import { HeaderContainer, Header, Image, ViewResumeLink } from './styles';
 
-export const Header = styled.div`
-  display: flex;
-  @media (max-width: 640px) {
-    flex-direction: column;
-  }
-`;
+const UserHeader = ({ user }) => {
+  const location = useLocation();
 
-export const Image = styled.img`
-  width: 200px;
-  margin-right: 1rem;
-  border-radius: 2px;
-`;
+  return (
+    <HeaderContainer isHome={location.pathname === '/'}>
+      <Header>
+        <Image src={user.basics.picture} />
+        <div>
+          <h2>{user.basics.name}</h2>
+          <h4>
+            <a
+              href={`https://gitconnected.com/${user.basics.username}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              @{user.basics.username}
+            </a>
+          </h4>
+          <p>{user.basics.label}</p>
+          <p>Coding in {user.basics.region}</p>
+          <p>{user.basics.yearsOfExperience} years of experience as a developer</p>
+          <p>{user.basics.headline}</p>
+          <p>
+            Blog:{' '}
+            <a href={user.basics.blog} target="_blank" rel="noreferrer noopener">
+              {user.basics.blog}
+            </a>
+          </p>
+        </div>
+      </Header>
+      <div>
+        <ViewResumeLink
+          href={`https://gitconnected.com/${user.basics.username}/resume`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>View Résumé</span>
+          <ArrowRight16 />
+        </ViewResumeLink>
+      </div>
+    </HeaderContainer>
+  );
+};
 
-export const ViewResumeLink = styled.a`
-  display: flex;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  align-items: center;
-  margin-top: 1rem;
-  border: 2px solid #2ecc40;
-  background-color: rgba(46, 204, 64, 0.3);
-  transition: background-color 250ms ease;
-  &:hover {
-    background-color: #2ecc40;
-  }
-  svg {
-    fill: white;
-    margin-left: 8px;
-  }
-`;
+export default UserHeader;

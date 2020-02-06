@@ -1,32 +1,17 @@
+// import styled from 'styled-components'
+// import { white } from '@carbon/colors'
 
-import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph } from '../../styles';
-import { WorkItem, WorkTitle, JobTitle } from './styles';
+// export const EducationItem = styled.li`
+//   margin-top: 1rem;
+//   padding-bottom: 1rem;
+//   border-bottom: 1px solid ${white};
+// `
 
-const Work = ({ user }) => {
-  return (
-    <Layout user={user}>
-      <div>
-        <SectionTitle>Work</SectionTitle>
-        <ul>
-          {user.work.map((work, i) => (
-            <WorkItem key={i}>
-              <WorkTitle>{work.position}</WorkTitle>
-              <div>
-                <JobTitle>{work.company}</JobTitle> <span>{work.location}</span>
-                <span> &sdot; </span>
-                <span>
-                  {work.start.year} to {work.end.year}
-                </span>
-              </div>
-              <Paragraph>{work.summary}</Paragraph>
-            </WorkItem>
-          ))}
-        </ul>
-      </div>
-    </Layout>
-  );
-};
+// export const Institution = styled.h4`
+//   font-weight: bold;
+// `
 
-export default Work;
+// export const Degree = styled.p`
+//   font-weight: bold;
+//   display: inline-block;
+// `
