@@ -1010,50 +1010,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@carbon/colors@^10.7.1":
-  version "10.7.1"
-  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.7.1.tgz#cd42c4904edd93095c37763308f25c4bcc2d830d"
-  integrity sha512-oGyyf/4AFMrAcfaXK19si+PAv2+bnnS8YwDeGQ2rGTpLwhAKhpxxafdFhSPk9zG9FhFSOw+pnKzUI1Ou8Syqjw==
-
-"@carbon/icon-helpers@^10.5.2":
-  version "10.5.2"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.5.2.tgz#7975fc091206f4a423e812dada89519df52c2041"
-  integrity sha512-L3pK5YbXj2B/lXHb0NyHbGzOLpMBOP0uL9J4wARCr/NNvuyqJEkgj9JSSX7OAORkOk9NncOdpgCyKzjIBheU6w==
-
-"@carbon/icons-react@^10.8.2":
-  version "10.8.2"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.8.2.tgz#f109b80457a4dcb23dd4d168662966ca229a3614"
-  integrity sha512-7XPbFk3DrVzfgjNmKXBT/qpTJ7bG4htGsp+CTt3X/kXrxPVd/VYUpeSErG1ozLNp/dSwzuPb8w0dQh1j9+HuDw==
-  dependencies:
-    "@carbon/icon-helpers" "^10.5.2"
-
-"@carbon/import-once@^10.3.0":
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
-  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
-
-"@carbon/layout@^10.7.2":
-  version "10.7.2"
-  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.7.2.tgz#17e34c76410f4a6aa40ba4bb38df204b674de2d5"
-  integrity sha512-109PqRWg6goF3uteeMKc1KRKvhhyqg5QHxE/FH8s9qpKx8+uE5caOEuOkC26C6nQwrxQtnQwjHFv8A+ObpumHg==
-
-"@carbon/themes@^10.9.2":
-  version "10.9.2"
-  resolved "https://registry.yarnpkg.com/@carbon/themes/-/themes-10.9.2.tgz#b1e1036a4eb2b54dc8fb52cf2ead5ce01cdf0f48"
-  integrity sha512-E8AfTWsYOQmznsqvTwu6ppXkXSZcxXVB2vqyqzBnXg4vKqJdBS7l1IH9BYwsDseCOB0wIQcHs6aVyhAFTYNRqw==
-  dependencies:
-    "@carbon/colors" "^10.7.1"
-    "@carbon/layout" "^10.7.2"
-    "@carbon/type" "^10.8.2"
-
-"@carbon/type@^10.8.2":
-  version "10.8.2"
-  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.8.2.tgz#2f933a5dabf641741916dba5b27ed5902390e06f"
-  integrity sha512-QNX3u9EcUd4VMlq0fqy+muP3A2ut7mOGQF/f7l+5zt6CAAIFjELY7WhFqCzdDaIVYY4ljctDGtuDISOvQRFtQg==
-  dependencies:
-    "@carbon/import-once" "^10.3.0"
-    "@carbon/layout" "^10.7.2"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"

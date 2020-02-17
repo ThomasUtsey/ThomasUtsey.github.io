@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Pages from './pages';
-import './index.scss'
+import ProfileCard from './components/profileCard'
+import './app.css'
+import image from './background.jpg'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -16,8 +17,16 @@ function App() {
   if (!user) {
     return <div />;
   }
-
-  return <Pages user={user} />;
+  console.log(user)
+  return (
+   
+    <div className="appcontainer">
+      <img src={image} alt="" srcset=""/>
+      <ProfileCard
+      data = {user.basics}
+    />
+    </div>
+  )
 }
 
 export default App;
