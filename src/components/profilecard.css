@@ -1,20 +1,26 @@
-.profile-card{
-    width:30%;
-    /* display:flex; */
-    padding: 1%;
-    background-color: rgb(31, 29, 29);
-    color:whitesmoke;
-    opacity: 5;
-   
+.profile-card {
+  width: 49%;
+  padding: 1%;
+  background-color: black;
+  color: rgb(253, 242, 242);
 }
 
-.profile-card img{
-    padding: 1%;
-    width:70%;
-    margin: 6% 0% 0% 11%;
-    border-radius: 50%;
+.profile-card img {
+  padding: 1%;
+  width: 100%;
+  margin: 4% 0% 0% 4%;
+  border-radius: 50%;
+}
+.profile-card-mid{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.headline{
+    padding:10%;
+    line-height: 2rem;
 }
 
-.name-container{
-    margin:1%;
+.name-container {
+  margin: 1%;
 }

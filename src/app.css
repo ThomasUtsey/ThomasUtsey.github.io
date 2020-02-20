@@ -1,11 +1,10 @@
-.appcontainer{
-margin:0 auto;
 
-}
-/* .background-image{
-    background-image:url('background.jpg');
-   
-    height:1000px;
+
+.image img{
+    opacity:.3;
+    position: fixed;
+    max-width: 99%;
+    height:auto;
+    border:black solid 2px
     
-    opacity: .5;
-} */
+}
