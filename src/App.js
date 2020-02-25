@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import './app.css'
-import background from './background.jpg'
-import ProfileCard from "./components/profileCard";
+import ProfileCard from "./components/profile-card/profileCard";
+import Nav from "./components/nav/nav"
 
 
 class App extends React.Component {
@@ -26,17 +26,18 @@ class App extends React.Component {
   }
 
   render() {
-    if(!this.state.user.basics) return <div></div>
+    console.log(this.state)
+    if(!this.state.user.basics) return <div>Loading...</div>
 
     return <div className='app-container'>
-      <div className="image">
+      {/* <div className="image">
         <img src={background} alt="background img"/>
-      </div>
-      
+      </div> */}
+      <Nav/>
         <ProfileCard
         data={this.state.user.basics}
         />
-      
+      <Nav/>
       </div>;
   }
 }

@@ -1,15 +1,15 @@
 .profile-card {
-  width: 49%;
+  width: 98%;
   padding: 1%;
-  background-color: black;
-  color: rgb(253, 242, 242);
+ 
+  height: 100%;
 }
 
 .profile-card img {
   padding: 1%;
-  width: 100%;
+  width: 50%;
   margin: 4% 0% 0% 4%;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 .profile-card-mid{
     display: flex;
