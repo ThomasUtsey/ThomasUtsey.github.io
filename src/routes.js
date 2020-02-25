@@ -11,6 +11,7 @@ import Nav from "./components/nav/nav"
 
 const Routes = () =>{
     return(
+      
     <BrowserRouter>
         <Nav/>
         <Switch>
@@ -24,7 +25,7 @@ const Routes = () =>{
         </Switch>
         <Nav/>
     </BrowserRouter>
- 
+    
     )
 }
 export default Routes

@@ -33,11 +33,11 @@ class App extends React.Component {
       {/* <div className="image">
         <img src={background} alt="background img"/>
       </div> */}
-      <Nav/>
+   
         <ProfileCard
         data={this.state.user.basics}
         />
-      <Nav/>
+     
       </div>;
   }
 }

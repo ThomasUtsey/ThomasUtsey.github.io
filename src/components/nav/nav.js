@@ -5,7 +5,7 @@ import './nav.css'
 const Nav = () =>{
 
     return(
-        <div>
+        <div className='nav'>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/goals">Goals</NavLink>
