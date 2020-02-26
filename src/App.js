@@ -33,6 +33,7 @@ class App extends React.Component {
       {/* <div className="image">
         <img src={background} alt="background img"/>
       </div> */}
+      
    
         <ProfileCard
         data={this.state.user.basics}

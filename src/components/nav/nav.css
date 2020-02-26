@@ -1,3 +1,20 @@
 .nav{
-    background-color: black;
+    color:black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: silver;
+    padding:1%;
 }
+
+    .nav-child {
+        width: 20%;
+        text-align: center;
+   
+    }
+    .nav-child:hover{
+        background-color: darkgray;
+    }
+   
+
+
