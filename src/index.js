@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Routes from './routes'
+import App from './App'
+import {BrowserRouter} from 'react-router-dom'
 
 
 ReactDOM.render(
-   <Routes/>,
+    <BrowserRouter>
+   <App/>
+   </BrowserRouter>,
     document.querySelector('#root')
 )

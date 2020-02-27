@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Projects = () =>{
-    return(
-        <div>This will be the projects page</div>
-    )
+const Projects = ({data}) =>{
+    console.log(data)
+    //  for(let proj of data){
+        return(<div>gu</div>)
+
+    //         <div>{proj.name}</div>
+        
+    // }
+ 
 }
 export default Projects
