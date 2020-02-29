@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+
 import './nav.css'
 
 const Nav = () =>{
@@ -23,6 +24,7 @@ const Nav = () =>{
             <div className="nav-child"><NavLink style={navStyle} to="/contact">Contact Me </NavLink></div>|
             <div className="nav-child"><NavLink style={navStyle} to="/experience">Experience </NavLink></div>|
             <div className="nav-child"><NavLink style={navStyle} to="/education">Education </NavLink></div>
+            
         </div>
     )
 }

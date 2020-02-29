@@ -1,13 +1,15 @@
 import React from 'react'
+import ProjectCard from './projectCard'
+import './projects.css'
 
 const Projects = ({data}) =>{
-    console.log(data)
-    //  for(let proj of data){
-        return(<div>gu</div>)
+    
+ return  <div className='projects'> {data.map(e => {
+  return  <ProjectCard
+  data={e}
+  />
 
-    //         <div>{proj.name}</div>
-        
-    // }
- 
+})}
+</div> 
 }
 export default Projects
