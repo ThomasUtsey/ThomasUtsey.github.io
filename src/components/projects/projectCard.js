@@ -5,6 +5,7 @@ const ProjectCard = ({data}) =>{
     console.log(data)
     return(
         <div className="project-card">
+            <img src={data.images[0].resolutions.thumbnail.url} alt="" srcset=""/>
             <h2 className='proj-title'>{data.name}</h2>
             <div className="proj-dsc">{data.summary}</div> 
             <div ><ul className="proj-tech">

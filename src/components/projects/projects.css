@@ -7,9 +7,13 @@
     width:25%;
     border: 2px solid grey;
     background-color: aliceblue;
-    height: 350px;
+    height: 100%;
     margin:2%;
     color:black;
+    
+}
+img{
+    width:100%;
 }
 .proj-title{
     padding:1%;
@@ -24,11 +28,16 @@
     display:flex;
     padding:1%;
     border-bottom: 1px solid black;
+    
 }
 .tech-list{
-    width:45%;
+    width:40%;
+    list-style-type: none;
+    margin:0% 0% 0% 5%;
 }
-
+li{
+    margin:0% 0% 0% 10%;
+}
 .proj-links{
     padding:1%;
 }
