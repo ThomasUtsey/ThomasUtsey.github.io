@@ -10,7 +10,7 @@ export default function Contact() {
     e.preventDefault();
     console.log(e.target)
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('default_service', 'template_4XZrIpKt', e.target,'WbeUYLO8TMaKH3hBSVqbe')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
