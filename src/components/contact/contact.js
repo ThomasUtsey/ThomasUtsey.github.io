@@ -21,9 +21,7 @@ class Contact extends React.Component{
     console.log(e)
 
     const data = {
-      service_id: 'default_service',
-      template_id: 'template_4XZrIpKt',
-      user_id: 'user_WbeUYLO8TMaKH3hBSVqbe',
+    
       template_params:{
         to_name: 'Thomas',
         email:this.state.user_email,
@@ -31,15 +29,20 @@ class Contact extends React.Component{
         message_html:this.state.message
       }
     }
-
+   
    
   emailjs.send('gmail', 'template_4XZrIpKt', data.template_params,'user_WbeUYLO8TMaKH3hBSVqbe')
       .then(function(response) {
          console.log('SUCCESS!', response.status, response.text);
+    
       }, function(error) {
          console.log('FAILED...', error);
       });
-    
+      this.setState({
+        user_name:'',
+        user_email:'',
+        message:''
+       })
     };
       handleChange  = (event) => {
           const { target: { name, value } } = event
