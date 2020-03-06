@@ -1,22 +1,23 @@
-.contact-form{
-    width:50%;
-    color:black;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    height:600px;
-    padding:1%;
-    border:1px solid black;
+.contact-form {
+  width: 50%;
+  color: black;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 1%;
+  border: 1px solid black;
+  margin: 1% 1% 1% 24%;
 }
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
-label{
-    margin:1%;
+label {
+  margin: 1%;
 }
-.button{
-    margin:1%;
+.button {
+  margin: 1%;
 }
-.message{
-    height: 200px;
+.message {
+  height: 200px;
 }

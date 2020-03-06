@@ -7,13 +7,13 @@ return(
     <div className='profile-card'>
      <div className = 'name-container'>
     <h1>{data.name}</h1>
-    <h3>{data.label}</h3>
+    <h2>{data.label}</h2>
     </div>
     <div className='profile-card-mid'>
     <img src={data.picture} alt="pic of me"/>
    
     <div className='headline'>
-    <h2>{data.headline}</h2>
+    <h2>"{data.headline}"</h2>
     </div>
     </div>
     </div>

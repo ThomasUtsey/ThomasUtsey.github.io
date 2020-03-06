@@ -1,24 +1,26 @@
 .profile-card {
   width: 98%;
   padding: 1%;
- 
+
   height: 100%;
 }
 
 .profile-card img {
   padding: 1%;
-  width: 50%;
-  margin: 4% 0% 0% 4%;
+  width: 20%;
+  margin: 4% 0% 4% 4%;
   border-radius: 40%;
 }
-.profile-card-mid{
-    display: flex;
-    justify-content: space-between;
-    width:100%;
+.profile-card-mid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.headline{
-    padding:10%;
-    line-height: 2rem;
+.headline {
+  padding: 10%;
+  line-height: 2rem;
+  width: 40%;
+  margin: -1% 6% 2% 0%;
 }
 
 .name-container {

@@ -36,9 +36,6 @@ class App extends React.Component {
     if(!this.state.user.basics) return <div>Loading...</div>
 
     return <div className='app-container'>
-      {/* <div className="image">
-        <img src={background} alt="background img"/>
-      </div> */}
       
       <Nav/>
         <Switch>
