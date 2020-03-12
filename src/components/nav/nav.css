@@ -1,20 +1,40 @@
-.nav{
-    color:black;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: silver;
-    padding:1%;
+.nav {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: silver;
+  padding: 1%;
 }
 
-    .nav-child {
-        width: 20%;
-        text-align: center;
-   
-    }
-    .nav-child:hover{
-        background-color: darkgray;
-    }
-   
-
-
+.nav-child {
+  color: black;
+  width: 10%;
+  text-align: center;
+}
+.fa-bars {
+  display: none;
+}
+.nav-child:hover {
+  background-color: darkgray;
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+  }
+  .fa-bars {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-child {
+    padding: 2%;
+    width: 100%;
+  }
+  .open {
+    display: flex;
+    text-align: center;
+  }
+  .close {
+    display: none;
+  }
+}

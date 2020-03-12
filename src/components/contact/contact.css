@@ -4,10 +4,10 @@
   background-color: lightgray;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  /* height: 500px; */
   padding: 1%;
   border: 1px solid black;
-  margin: 1% 1% 1% 24%;
+  margin: 11% 1% 11% 24%;
 }
 h3 {
   text-align: center;
@@ -19,5 +19,5 @@ label {
   margin: 1%;
 }
 .message {
-  height: 200px;
+  
 }

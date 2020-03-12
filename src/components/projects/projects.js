@@ -6,6 +6,7 @@ const Projects = ({data}) =>{
     
  return  <div className='projects'> {data.map(e => {
   return  <ProjectCard
+  key ={e.name}
   data={e}
   />
 
