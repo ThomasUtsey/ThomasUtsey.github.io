@@ -76,7 +76,7 @@ class Contact extends React.Component {
           value={this.state.user_email}
           onChange={this.handleChange}
         />
-        <label for="formGroupExampleInput"> Message </label>
+        <label htmlFor="formGroupExampleInput"> Message </label>
         <textarea
           className="form-control message"
           name="message"

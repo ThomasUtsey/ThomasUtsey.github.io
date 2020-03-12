@@ -22,17 +22,21 @@
   .nav {
     flex-direction: column;
   }
-  .fa-bars {
+  .burger {
     display: flex;
     justify-content: center;
   }
   .nav-child {
+    
     padding: 2%;
     width: 100%;
   }
   .open {
     display: flex;
     text-align: center;
+    padding: 2% 0% 2% 46%;
+    font-size: x-large;
+    
   }
   .close {
     display: none;

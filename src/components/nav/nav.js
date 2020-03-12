@@ -19,38 +19,38 @@ class Nav extends React.Component {
  render(){
    return(
     <div className="nav">
-      <i onClick={this.onClickHandler} className="fas fa-bars"></i>
+      <i onClick={this.onClickHandler} className="fas fa-bars burger"></i>
 
       <div className={this.state.toggle}>
         {" "}
-        <NavLink style={{"color":"black"}} to="/">
+        <NavLink style={{"color":"black"}} to="/" onClick={()=>this.setState({toggle:"close"})}>
           Home{" "}
         </NavLink>
       </div>
       <div className={this.state.toggle}>
         {" "}
-        <NavLink style={{"color":"black"}} to="/projects">
+        <NavLink style={{"color":"black"}} to="/projects" onClick={()=>this.setState({toggle:"close"})}>
           Projects{" "}
         </NavLink>
       </div>
       <div className={this.state.toggle}>
-        <NavLink style={{"color":"black"}} to="/education">
+        <NavLink style={{"color":"black"}} to="/education" onClick={()=>this.setState({toggle:"close"})}>
           Education{" "}
         </NavLink>
       </div>
       <div className={this.state.toggle}>
-        <NavLink style={{"color":"black"}} to="/experience">
+        <NavLink style={{"color":"black"}} to="/experience" onClick={()=>this.setState({toggle:"close"})}>
           Experience{" "}
         </NavLink>
       </div>
       <div className={this.state.toggle}>
         {" "}
-        <NavLink style={{"color":"black"}} to="/goals">
+        <NavLink style={{"color":"black"}} to="/goals" onClick={()=>this.setState({toggle:"close"})}>
           Blog
         </NavLink>
       </div>
       <div className={this.state.toggle}>
-        <NavLink style={{"color":"black"}} to="/contact">
+        <NavLink style={{"color":"black"}} to="/contact" onClick={()=>this.setState({toggle:"close"})}>
           Contact Me{" "}
         </NavLink>
       </div>
