@@ -42,10 +42,13 @@
     line-height: 2rem;
     width: 40%; */
   }
-  .name-container {
-    display: flex;
-    margin: 19.5% 1% 19.5% 1%;
-    text-align: center;
+  .name-container{
+    /* display: flex; */
+    /* margin: 1% 1% 1% 1%; */
+    /* text-align: center; */
+    padding-right: 45%;
+    margin-top: 80px;
+    margin-bottom: 90px;
   }
 }
 .profile-card {
@@ -53,4 +56,7 @@
   padding: 1%;
 
   height: 100%;
+}
+@media only screen and (max-width: 400px){
+  
 }

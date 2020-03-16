@@ -15,6 +15,25 @@
 .burger {
   display: none;
 }
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: "";
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
 .nav-child:hover {
   background-color: darkgray;
 }
@@ -25,9 +44,9 @@
   .burger {
     display: flex;
     justify-content: center;
+    padding: 1% 0% 2% 0%;
   }
   .nav-child {
-    
     padding: 2%;
     width: 100%;
   }
@@ -36,7 +55,6 @@
     text-align: center;
     padding: 2% 0% 2% 46%;
     font-size: x-large;
-    
   }
   .close {
     display: none;
