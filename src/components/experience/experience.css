@@ -1,0 +1,10 @@
+.experience {
+  
+  margin-bottom: 10px;
+}
+.experience-card {
+  border: 1px solid black;
+  padding: 1%;
+  margin-top: 10px;
+  background-color: aliceblue;
+}

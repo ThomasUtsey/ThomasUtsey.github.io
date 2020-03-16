@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
-import axios from "axios";
 
 class Contact extends React.Component {
   constructor(props) {
