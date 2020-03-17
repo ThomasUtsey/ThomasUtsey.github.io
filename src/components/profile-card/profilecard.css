@@ -1,9 +1,4 @@
 .profile-card {
-  width: 98%;
-  padding: 1%;
-
-  height: 100%;
-  margin-left: 25%;
 }
 
 .profile-card img {
@@ -16,21 +11,19 @@
 
 .profile-card-mid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  text-align: center;
 }
 .headline {
-  /* text-align: center; */
-  padding: 5%;
-  line-height: 2rem;
-  width: 40%;
-  margin-left: 2%;
+  padding: 5% 10% 5% 10%;
 }
 
 .name-container {
   display: flex;
   margin: 2% 1% 1% 1%;
   text-align: center;
+  justify-content: center;
 }
 @media only screen and (max-width: 900px) {
   .profile-card img {
@@ -38,17 +31,11 @@
   }
   .headline {
     display: none;
-    /* padding: 5%;
-    line-height: 2rem;
-    width: 40%; */
   }
-  .name-container{
+  .name-container {
     /* display: flex; */
     /* margin: 1% 1% 1% 1%; */
     /* text-align: center; */
-    padding-right: 45%;
-    margin-top: 80px;
-    margin-bottom: 90px;
   }
 }
 .profile-card {
@@ -57,6 +44,5 @@
 
   height: 100%;
 }
-@media only screen and (max-width: 400px){
-  
+@media only screen and (max-width: 400px) {
 }
