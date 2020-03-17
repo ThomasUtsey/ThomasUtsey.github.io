@@ -1,5 +1,4 @@
-.profile-card {
-}
+
 
 .profile-card img {
   padding: 1%;
@@ -32,16 +31,11 @@
   .headline {
     display: none;
   }
-  .name-container {
-    /* display: flex; */
-    /* margin: 1% 1% 1% 1%; */
-    /* text-align: center; */
-  }
 }
 .profile-card {
   width: 98%;
   padding: 1%;
-
+  margin: 16% 0% 16% 0%;
   height: 100%;
 }
 @media only screen and (max-width: 400px) {
