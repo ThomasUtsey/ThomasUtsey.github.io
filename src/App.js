@@ -5,10 +5,10 @@ import { Route, Switch } from "react-router-dom";
 import ProfileCard from "./components/profile-card/profileCard";
 import Nav from "./components/nav/nav";
 import Projects from "./components/projects/projects";
-import Goals from "./components/goals/goals";
 import Contact from "./components/contact/contact";
 import Experience from "./components/experience/experience";
 import Education from "./components/education/education";
+import Links from './components/Links/links'
 
 class App extends React.Component {
   state = {
@@ -31,12 +31,10 @@ class App extends React.Component {
   }
 
   render() {
-    
     if (!this.state.user.basics) return <div>Loading...</div>;
 
     return (
       <div className="app-container">
-        
         <Nav />
         <Switch>
           <Route
@@ -48,7 +46,6 @@ class App extends React.Component {
             path="/projects"
             render={e => <Projects data={this.state.user.projects} />}
           />
-          <Route path="/goals" render={e => <Goals />} />
           <Route path="/contact" component={Contact} />
           <Route
             path="/experience"
@@ -60,7 +57,7 @@ class App extends React.Component {
           />
           <Route component={App} />
         </Switch>
-        <Nav />
+        <Links/>
       </div>
     );
   }

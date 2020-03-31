@@ -59,17 +59,7 @@ class Nav extends React.Component {
             to="/experience"
             onClick={() => this.setState({ toggle: "close" })}
           >
-            Experience{" "}
-          </NavLink>
-        </div>
-        <div className={this.state.toggle}>
-          {" "}
-          <NavLink
-            style={{ color: "black" }}
-            to="/goals"
-            onClick={() => this.setState({ toggle: "close" })}
-          >
-            Blog
+            Experience
           </NavLink>
         </div>
         <div className={this.state.toggle}>
