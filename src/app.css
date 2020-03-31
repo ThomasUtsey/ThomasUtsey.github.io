@@ -1,6 +1,10 @@
 .app-container {
-  background-color: whitesmoke;
   color: black;
   padding: 1%;
   height: 100vh;
+}
+.back-image {
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
 }
