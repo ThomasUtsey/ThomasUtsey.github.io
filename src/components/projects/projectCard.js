@@ -4,7 +4,7 @@ import "./projects.css";
 const ProjectCard = ({ data }) => {
   return (
     <div className="project-card">
-      <img src={data.images[0].resolutions.thumbnail.url} alt=" project homepage"/>
+      <img className="proj-img" src={data.images[0].resolutions.thumbnail.url} alt=" project homepage"/>
       <h2 className="proj-title">{data.name}</h2>
       <div className="proj-dsc">{data.summary}</div>
 

@@ -36,8 +36,8 @@ class App extends React.Component {
 
     return (
       <div className="app-container">
-        <div className='back-image'>
-          <img src="https://source.unsplash.com/1600x900/?code" alt="" />
+        <div className="back-image">
+          <img src="https://source.unsplash.com/1600x1200/?code" alt="" />
         </div>
         <Nav />
         <Switch>

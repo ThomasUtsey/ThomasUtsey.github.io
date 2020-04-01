@@ -1,9 +1,9 @@
 .app-container {
   color: black;
-  padding: 1%;
   height: 100vh;
 }
 .back-image {
+  /* width: 100%; */
   position: absolute;
   opacity: 0.4;
   z-index: -1;

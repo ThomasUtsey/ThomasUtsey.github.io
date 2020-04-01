@@ -1,13 +1,15 @@
 .projects {
   display: flex;
+  
   justify-content: space-evenly;
 }
 .project-card {
-  width: 35%;
+  width: 100%;
   border: 2px solid grey;
   background-color: aliceblue;
   margin: 2%;
   color: black;
+  padding: 1%;
 }
 img {
   width: 100%;
@@ -43,19 +45,11 @@ h3 {
 }
 @media only screen and (max-width: 900px) {
   .project-card {
-    width: 35%;
-    border: 2px solid grey;
-    background-color: aliceblue;
-    margin: 2%;
-    color: black;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .project-card {
     width: 90%;
     border: 2px solid grey;
     background-color: aliceblue;
-    margin: 4%;
+    margin: 3%;
+    padding: 1%;
     color: black;
   }
 
