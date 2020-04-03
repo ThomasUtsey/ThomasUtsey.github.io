@@ -1,6 +1,7 @@
 .link-container{
     display: flex;
-    margin:1%
+    margin:1%;
+    justify-content: center;
 }
 
 .link-container a {
@@ -9,4 +10,8 @@
 }
 a{
   color: black;
+}
+@media only screen and (max-width: 900px) {
+ 
+  
 }
