@@ -1,10 +1,15 @@
 .experience {
-  
   margin-bottom: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .experience-card {
   border: 1px solid black;
   padding: 1%;
   margin-top: 10px;
   background-color: aliceblue;
+  width: 50%;
+  justify-content: center;
 }

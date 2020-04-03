@@ -8,6 +8,8 @@ const Experience = props => {
       {" "}
       {props.data.map(e => {
         return <ExperienceCard
+
+                key={e.company}
                 data ={e}
         />
       })}

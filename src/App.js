@@ -9,7 +9,7 @@ import Contact from "./components/contact/contact";
 import Experience from "./components/experience/experience";
 import Education from "./components/education/education";
 import Links from "./components/Links/links";
-import { ImageGroup } from "semantic-ui-react";
+import background from './background.jpg'
 
 class App extends React.Component {
   state = {
@@ -37,7 +37,7 @@ class App extends React.Component {
     return (
       <div className="app-container">
         <div className="back-image">
-          <img src="https://source.unsplash.com/1600x1200/?code" alt="" />
+          <img src={background} alt="" />
         </div>
         <Nav />
         <Switch>
@@ -61,7 +61,9 @@ class App extends React.Component {
           />
           <Route component={App} />
         </Switch>
+        <div className="linkage">
         <Links />
+        </div>
       </div>
     );
   }

@@ -1,10 +1,16 @@
 .app-container {
   color: black;
-  height: 100vh;
 }
 .back-image {
-  /* width: 100%; */
+  width: 100%;
   position: absolute;
   opacity: 0.4;
   z-index: -1;
+  background-repeat: repeat-x;
+
+}
+.linkage {
+  display: flex;
+  justify-content: center;
+  margin-left: 43%;
 }
