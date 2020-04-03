@@ -5,5 +5,8 @@
 
 .link-container a {
   width: 5%;
-  margin:1%;
+  margin:2%;
+}
+a{
+  color: black;
 }
