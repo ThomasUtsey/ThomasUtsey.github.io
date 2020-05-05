@@ -10,15 +10,15 @@ const Links = () => {
     <div className="link-container">
       <a target="_blank" href="https://github.com/ThomasUtsey">
         <img src={github} alt="Github icon" />
-        Github
+        <span> Github</span>
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/thomasutsey/">
         <img src={linkedin} alt="Linked In icon" />
-        Linkedin
+        <span> Linkedin</span>
       </a>
       <a target="_blank" href="https://resume.creddle.io/resume/66v1k2i2kf6">
         <img src={resume} alt="Resume Icon" />
-        Resume
+        <span> Resume</span>
       </a>
     </div>
   );

@@ -1,17 +1,19 @@
-.link-container{
-    display: flex;
-    margin:1%;
-    justify-content: center;
+.link-container {
+  display: flex;
+  margin: 1%;
+  justify-content: center;
 }
 
 .link-container a {
   width: 5%;
-  margin:2%;
+  margin: 2%;
 }
-a{
+a {
   color: black;
 }
+
+span {
+  margin: 0% 0% 0% 16%;
+}
 @media only screen and (max-width: 900px) {
- 
-  
 }
