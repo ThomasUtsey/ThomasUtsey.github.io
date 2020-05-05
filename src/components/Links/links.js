@@ -12,7 +12,7 @@ const Links = () => {
         <img src={github} alt="Github icon" />
         Github
       </a>
-      <a target="_blank" href="https://www.linkedin.com/feed/">
+      <a target="_blank" href="https://www.linkedin.com/in/thomasutsey/">
         <img src={linkedin} alt="Linked In icon" />
         Linkedin
       </a>
