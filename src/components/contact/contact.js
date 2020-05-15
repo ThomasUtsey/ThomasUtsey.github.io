@@ -98,12 +98,14 @@ class Contact extends React.Component {
           onChange={this.handleChange}
         />
         <input className="button" type="submit" value="Send" />
-        <Recaptcha
-          sitekey="6LdQDvMUAAAAAAuK5i-pNwLT0axKIKL6_Do7Jwfr"
-          render="explicit"
-          onloadCallback={this.recaptchaLoaded}
-          verifyCallback={this.verify}
-        />
+        <div>
+          <Recaptcha
+            sitekey="6LdQDvMUAAAAAAuK5i-pNwLT0axKIKL6_Do7Jwfr"
+            render="explicit"
+            onloadCallback={this.recaptchaLoaded}
+            verifyCallback={this.verify}
+          />
+        </div>
       </form>
     );
   }

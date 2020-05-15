@@ -1,22 +1,20 @@
 .app-container {
   color: black;
- 
 }
 .back-image {
   width: 100%;
+  height: 100%;
   position: absolute;
-
+  background-size: cover;
   opacity: 0.4;
   z-index: -1;
-  background-repeat: repeat-x;
-  margin-top: 3%;
-
+}
+.back-image img {
+  height: 150%;
 }
 .linkage {
   display: flex;
   justify-content: center;
-  
 }
 @media only screen and (max-width: 900px) {
-  
-  }
+}
