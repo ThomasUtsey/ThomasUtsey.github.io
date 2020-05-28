@@ -6,6 +6,7 @@
 }
 
 .link-container a {
+  font-size: 100%;
   width: 10%;
   margin-left: 7%;
 }
@@ -16,4 +17,23 @@ a {
 span {
   display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+  .link-container a {
+    width: 24%;
+    margin-left: 9%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .link-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 1%;
+    margin: 20% 7% 0% 0%;
+  }
+  .link-container a {
+    width: 24%;
+    margin-left: 9%;
+  }
 }

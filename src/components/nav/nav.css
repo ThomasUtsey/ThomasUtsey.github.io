@@ -61,3 +61,27 @@
     display: none;
   }
 }
+@media only screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+  .burger {
+    display: flex;
+    justify-content: center;
+    padding: 4% 10% 5% 0%;
+  }
+  .nav-child {
+    padding: 2%;
+    width: 100%;
+  }
+  .open {
+    display: flex;
+    justify-content: center;
+    padding: 2% 2% 2% 0%;
+    font-size: x-large;
+  }
+  .close {
+    display: none;
+    margin-bottom: 1px;
+  }
+}
