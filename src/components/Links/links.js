@@ -16,7 +16,7 @@ const Links = () => {
         <img src={linkedin} alt="Linked In icon" />
         <span> Linkedin</span>
       </a>
-      <a target="_blank" href="https://resume.creddle.io/resume/66v1k2i2kf6">
+      <a target="_blank" href="https://gitconnected.com/thomasutsey/resume">
         <img src={resume} alt="Resume Icon" />
         <span> Resume</span>
       </a>

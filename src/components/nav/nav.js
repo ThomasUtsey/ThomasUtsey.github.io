@@ -7,7 +7,7 @@ class Nav extends React.Component {
   constructor() {
     super();
     this.state = {
-      toggle: "close"
+      toggle: "close",
     };
   }
   onClickHandler = () => {
@@ -32,6 +32,16 @@ class Nav extends React.Component {
             onClick={() => this.setState({ toggle: "close" })}
           >
             Home{" "}
+          </NavLink>
+        </div>
+        <div className={this.state.toggle}>
+          {" "}
+          <NavLink
+            style={{ color: "black" }}
+            to="/skills"
+            onClick={() => this.setState({ toggle: "close" })}
+          >
+            Skills | Certs{" "}
           </NavLink>
         </div>
         <div className={this.state.toggle}>

@@ -9,20 +9,22 @@ import Contact from "./components/contact/contact";
 import Experience from "./components/experience/experience";
 import Education from "./components/education/education";
 import Links from "./components/Links/links";
-import background from './background.jpg'
+import background from "./background.jpg";
+import Skills from "./components/skills/skills";
 
 class App extends React.Component {
   state = {
-    user: {}
+    user: {},
   };
 
   getUser = () => {
     axios
       .get("https://gitconnected.com/v1/portfolio/thomasutsey")
-      .then(res => {
+      .then((res) => {
+        console.log(res.data);
         this.setState({ user: res.data });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   };
@@ -44,25 +46,30 @@ class App extends React.Component {
           <Route
             exact={true}
             path="/"
-            render={e => <ProfileCard data={this.state.user.basics} />}
+            render={(e) => <ProfileCard data={this.state.user.basics} />}
+          />
+          <Route
+            exact={true}
+            path="/skills"
+            render={(e) => <Skills data={this.state.user.skills} />}
           />
           <Route
             path="/projects"
-            render={e => <Projects data={this.state.user.projects} />}
+            render={(e) => <Projects data={this.state.user.projects} />}
           />
           <Route path="/contact" component={Contact} />
           <Route
             path="/experience"
-            render={e => <Experience data={this.state.user.work} />}
+            render={(e) => <Experience data={this.state.user.work} />}
           />
           <Route
             path="/education"
-            render={e => <Education data={this.state.user.education} />}
+            render={(e) => <Education data={this.state.user.education} />}
           />
           <Route component={App} />
         </Switch>
         <div className="linkage">
-        <Links />
+          <Links />
         </div>
       </div>
     );
