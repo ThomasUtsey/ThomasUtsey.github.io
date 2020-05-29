@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   width: 30%;
-  padding-top: 1%;
 }
 
 .link-container a {
@@ -21,7 +20,12 @@ span {
 @media only screen and (max-width: 900px) {
   .link-container a {
     width: 24%;
-    margin-left: 9%;
+    margin-left: 0%;
+  }
+  .link-container {
+    padding: 15% 0% 0% 0%;
+    justify-content: space-between;
+    width: 30%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -29,7 +33,7 @@ span {
     display: flex;
     justify-content: center;
     width: 50%;
-    padding-top: 1%;
+
     margin: 20% 7% 0% 0%;
   }
   .link-container a {
