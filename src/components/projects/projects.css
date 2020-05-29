@@ -1,6 +1,6 @@
 .projects {
   display: flex;
-  
+
   justify-content: space-evenly;
 }
 .project-card {
@@ -38,11 +38,14 @@ li {
 }
 .proj-links {
   padding: 1%;
+  margin-top: 1px;
+  text-align: center;
 }
 
 h3 {
   border-bottom: 1px solid black;
 }
+
 @media only screen and (max-width: 900px) {
   .project-card {
     width: 90%;

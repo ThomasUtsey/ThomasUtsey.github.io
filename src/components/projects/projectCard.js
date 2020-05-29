@@ -2,7 +2,6 @@ import React from "react";
 import "./projects.css";
 
 const ProjectCard = ({ data }) => {
-  
   return (
     <div className="project-card">
       <img
@@ -13,7 +12,9 @@ const ProjectCard = ({ data }) => {
       <h2 className="proj-title">{data.name}</h2>
       <div className="proj-dsc">{data.summary}</div>
 
-      <div className="proj-links">links</div>
+      <div className="proj-links">
+        links
+      </div>
       <div>
         <a target="_blank" href={data.githubUrl}>
           GitHub-repo

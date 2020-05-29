@@ -1,6 +1,6 @@
 .experience {
   margin-bottom: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,4 +12,11 @@
   background-color: aliceblue;
   width: 50%;
   justify-content: center;
+}
+
+.exp-title {
+  text-align: center;
+}
+.exp-pos {
+  border-bottom: 1px solid black;
 }

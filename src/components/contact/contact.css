@@ -16,7 +16,19 @@ label {
   margin: 1%;
 }
 .button {
+  display: flex;
+  justify-content: end;
   margin: 1%;
+  width: 28%;
+  padding: 1%;
+  box-shadow: 2px 2px grey;
 }
-.message {
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+.captcha {
+  margin: 1%;
+  box-shadow: 2px 2px grey;
 }
