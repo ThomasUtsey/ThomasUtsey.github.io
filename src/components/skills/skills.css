@@ -1,0 +1,25 @@
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-container {
+  background-color: aliceblue;
+  margin: 2% 2% 2% 2%;
+  width: 40%;
+}
+.name {
+  border-bottom: 1px solid black;
+  margin-bottom: 1px;
+  padding: 1%;
+}
+.bar {
+  display: flex;
+}
+#bar-indicator {
+  border: 1px solid black;
+  width: 75%;
+  margin-left: 1%;
+  background-color: lightgrey;
+}
