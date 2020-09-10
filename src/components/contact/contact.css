@@ -17,7 +17,7 @@ label {
 }
 .button {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 1%;
   width: 28%;
   padding: 1%;

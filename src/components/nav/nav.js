@@ -19,9 +19,9 @@ class Nav extends React.Component {
     return (
       <div className="nav">
         <div onClick={this.onClickHandler} className="burger">
-          <a id="nav-toggle" href="#">
+          <button id="nav-toggle" href="#">
             <span></span>
-          </a>
+          </button>
         </div>
 
         <div className={this.state.toggle}>
