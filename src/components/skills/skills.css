@@ -6,13 +6,29 @@
 
 .skill-container {
   background-color: aliceblue;
-  margin: 2% 2% 2% 2%;
-  width: 40%;
+  margin: 20px;
+  /* Remove fixed width and use min/max width instead */
+  min-width: 250px;
+  max-width: 40%;
+  /* Make the box fit content */
+  width: fit-content;
+  /* Keep existing styles */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add flex-grow to allow expansion if needed */
+  flex: 1 0 auto;
 }
 .name {
-  border-bottom: 1px solid black;
-  margin-bottom: 1px;
-  padding: 1%;
+  border-bottom: 2px solid black;
+  margin-bottom: 2px;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-name {
+  font-weight: bold;
 }
 .bar {
   display: flex;
@@ -22,4 +38,56 @@
   width: 75%;
   margin-left: 1%;
   background-color: lightgrey;
+}
+
+.url {
+  margin-left: 10px;
+}
+
+.url a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.url a:hover {
+  text-decoration: underline;
+  background-color: #e0e0e0;
+}
+
+.certs {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;  /* or border-top: 1px solid black; for darker border */
+  font-size: 0.9em;
+  color: #666;  /* optional: makes the date slightly muted */
+}
+
+.certifications-header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.certifications-header h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.certifications-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #3498db;
+  border-radius: 2px;
 }

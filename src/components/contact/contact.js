@@ -1,5 +1,5 @@
 import React from "react";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 import Recaptcha from "react-recaptcha";
 
@@ -36,8 +36,7 @@ class Contact extends React.Component {
         },
       };
 
-      emailjs
-        .send(
+        emailjs.send(
           "gmail",
           "template_4XZrIpKt",
           data.template_params,

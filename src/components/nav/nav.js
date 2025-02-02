@@ -27,7 +27,7 @@ class Nav extends React.Component {
         <div className={this.state.toggle}>
           {" "}
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/"
             onClick={() => this.setState({ toggle: "close" })}
           >
@@ -37,17 +37,17 @@ class Nav extends React.Component {
         <div className={this.state.toggle}>
           {" "}
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/skills"
             onClick={() => this.setState({ toggle: "close" })}
           >
-            Skills | Certs{" "}
+            Certifications{" "}
           </NavLink>
         </div>
         <div className={this.state.toggle}>
           {" "}
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/projects"
             onClick={() => this.setState({ toggle: "close" })}
           >
@@ -56,7 +56,7 @@ class Nav extends React.Component {
         </div>
         <div className={this.state.toggle}>
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/education"
             onClick={() => this.setState({ toggle: "close" })}
           >
@@ -65,7 +65,7 @@ class Nav extends React.Component {
         </div>
         <div className={this.state.toggle}>
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/experience"
             onClick={() => this.setState({ toggle: "close" })}
           >
@@ -74,7 +74,7 @@ class Nav extends React.Component {
         </div>
         <div className={this.state.toggle}>
           <NavLink
-            style={{ color: "black" }}
+            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
             to="/contact"
             onClick={() => this.setState({ toggle: "close" })}
           >

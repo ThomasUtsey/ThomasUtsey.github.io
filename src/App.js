@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./app.css";
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ProfileCard from "./components/profile-card/profileCard";
 import Nav from "./components/nav/nav";
 import Projects from "./components/projects/projects";
@@ -42,32 +42,41 @@ class App extends React.Component {
           <img src={background} alt="" />
         </div>
         <Nav />
-        <Switch>
+        <Routes>
           <Route
             exact={true}
             path="/"
+            element={<ProfileCard data={this.state.user.basics} />}
             render={(e) => <ProfileCard data={this.state.user.basics} />}
           />
           <Route
             exact={true}
             path="/skills"
+            element={<Skills 
+              data={this.state.user.skills}
+              certs={this.state.user.certificates}
+               />}
             render={(e) => <Skills data={this.state.user.skills} />}
           />
           <Route
             path="/projects"
+            element={<Projects data={this.state.user.projects} />}
             render={(e) => <Projects data={this.state.user.projects} />}
           />
-          <Route path="/contact" component={Contact} />
+          <Route path="/contact"
+            element={<Contact />} component={Contact} />
           <Route
             path="/experience"
             render={(e) => <Experience data={this.state.user.work} />}
+            element={<Experience data={this.state.user.work} />}
           />
           <Route
             path="/education"
             render={(e) => <Education data={this.state.user.education} />}
+            element={<Education data={this.state.user.education} />}
           />
           <Route component={App} />
-        </Switch>
+        </Routes>
         <div className="linkage">
           <Links />
         </div>

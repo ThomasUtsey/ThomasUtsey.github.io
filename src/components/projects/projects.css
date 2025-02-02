@@ -4,7 +4,7 @@
   justify-content: space-evenly;
 }
 .project-card {
-  width: 100%;
+  width: 50%;
   border: 2px solid grey;
   background-color: aliceblue;
   margin: 2%;
@@ -12,7 +12,7 @@
   padding: 1%;
 }
 img {
-  width: 100%;
+  width: 20%;
 }
 .proj-title {
   padding: 1%;
